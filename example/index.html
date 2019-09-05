@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>
+<script src="https://new.icity24.cn/icity/apps/static/configflexible.icity.js"></script>
+<style>
+    body {
+        background-color: #eeeeee;
+        padding: 0;
+        margin: 0;
+    }
+    [v-cloak] {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <i3-theme-auto id="app" v-cloak>
+        <i3-search v-model='searchKey' @search='onSearch'></i3-search>
+        <i3-navigation type='scroll' :data="navigationData"></i3-navigation><p></p>
+        <i3-button @click='onOk'>知道了</i3-button><p></p>
+        <i3-form-group class="indent material last-no-border">
+            <i3-form-label-field type='arrow' label='手机号'>1506813456</i3-form-label-field>
+            <i3-form-label-field label='手机号'>1506813456</i3-form-label-field>
+            <i3-form-label-input label='用户名' placeholder='请输入用户名' 
+                v-model='username'></i3-form-label-input>
+            <i3-form-label-password label='密码' toggle='none' placeholder='请输入密码' 
+                v-model='password'></i3-form-label-password>
+            <i3-form-label-switch label='Toast' @toggle='onToastSwitch' default='on'></i3-form-label-switch>
+            <i3-form-label-switch label='Alert' @toggle='onAlertSwitch' ref='alert'></i3-form-label-switch>
+            <i3-form-label-switch label='Dialog' @toggle='onDialogSwitch' ref='dialog'></i3-form-label-switch>
+            <i3-form-label-switch label='PickerCamera' @toggle='onPickerCameraSwitch' ref='pickercamera'></i3-form-label-switch>
+            <i3-form-label-switch label='PickerCategory' @toggle='onPickerCategorySwitch' ref='pickercategory'></i3-form-label-switch>
+        </i3-form-group>
+        <i3-alert v-model='alertShow' title="标题" outside='cancel' @confirm='onCancel' confirm-text='知道了'>
+            Hello World
+        </i3-alert>
+        <i3-dialog v-model='dialogShow' title="标题" outside='cancel' @cancel='onCancel' @confirm='onCancel'>
+            Hello World
+        </i3-dialog>
+        <i3-picker-camera v-model='pickerCameraShow' outside='cancel' @cancel='onCancel'></i3-picker-camera>
+        <i3-picker-category v-model='pickerCategoryShow' :data='categoryData' outside='cancel' @cancel='onCancel'></i3-picker-category>
+    </i3-theme-auto>
+<script type="text/javascript" src="index.js"></script></body>
+</html>

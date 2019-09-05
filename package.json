@@ -1,0 +1,24 @@
+{
+  "name": "imui",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:lib": "webpack -p --progress --config ./build/webpack.lib.js",
+    "build:example": "webpack -p --progress --config ./build/webpack.test.js",
+    "build:example:dev": "webpack-dev-server --config ./build/webpack.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://10.110.9.229/icity/icityMain/h5/icity/imui.git"
+  },
+  "author": "icity h5 team",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "file-loader": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.24.0"
+  }
+}

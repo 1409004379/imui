@@ -1,0 +1,107 @@
+/deep/ .i-button  {
+    .primary {
+        background-color: $primaryColor;
+    }
+    .outline {
+        border: 1px solid $primaryColor;
+        color: $primaryColor; 
+    }
+}
+/deep/ .i-form-label-switch  {
+    .field .active {
+        background-color: $primaryColor;
+    }
+}
+/deep/ .i-dialog {
+    .box .btn .confirm {
+        color: $primaryColor;
+    }
+}
+/deep/ .i-alert {
+    .box .btn span {
+        color: $primaryColor;
+    }
+}
+/deep/ .i-navigation {
+    .box .line {
+        background-color: $primaryColor;
+    }
+    .selected {
+        .text { color: $primaryColor; }
+    }
+}
+/deep/ .i-tab {
+    .selected {
+        span {
+            animation: transform .3s forwards;
+        }
+        @keyframes transform {
+            from { color:#333333; }
+            to { color: $primaryColor; }
+        }
+    }
+    
+}
+/deep/ .i-picker-address {
+    .box {
+        .btn .confirm {
+            color: $primaryColor;
+        }
+        .scroll .selected {
+            color: $primaryColor;
+        }
+    }
+}
+
+/deep/ .i-loading {
+    .circle {
+        .bounce1, .bounce2 {
+            background-color: $primaryColor;
+        }
+    }
+}
+
+/deep/ .i-tips-a {
+    .right {
+        span {
+            color: $primaryColor;
+            border-color: $primaryColor;
+        }
+    }
+}
+
+/deep/ .i-auth-login {
+    .box i {
+        color: $primaryColor;
+    }
+}
+
+/deep/ .i-auth-real {
+    .box i {
+        color: $primaryColor;
+    }
+}
+
+/deep/ .i-warning {
+    i {
+        color: $primaryColor;
+    }
+}
+
+/deep/ .i-unavailable {
+    i {
+        color: $primaryColor;
+    }
+}
+
+/deep/ .ic-loading {
+    .ic-bg {
+        background-color: $primaryColor;
+    }
+}
+
+/deep/ .i-badge {
+    .box {
+        background-color: $primaryColor;
+    }
+}
